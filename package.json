@@ -5,10 +5,16 @@
   "keywords": [
     "music",
     "note",
+    "frequency",
+    "midi",
     "utility"
   ],
   "author": "Raoul Harel",
   "license": "MIT",
+  "homepage": "https://github.com/rharel/js-music-note-utils",
+  "bugs": {
+    "url": "https://github.com/rharel/js-music-note-utils/issues"
+  },
   "scripts": {
     "test": "mocha",
     "coverage": "node_modules/.bin/istanbul-cobertura-badger -r coverage/cobertura-coverage.xml -b badge"
