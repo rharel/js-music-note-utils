@@ -1,6 +1,6 @@
 {
   "name": "@rharel/music-note-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compact utility library for modeling and manipulating individual musical notes.",
   "keywords": [
     "music",
