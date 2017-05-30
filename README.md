@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/rharel/js-music-note-utils.svg?branch=master)](https://travis-ci.org/rharel/js-music-note-utils) ![coverage](coverage/badge.svg)
+[![Build Status](https://travis-ci.org/rharel/js-music-note-utils.svg?branch=master)](https://travis-ci.org/rharel/js-music-note-utils)  ![Coverage](https://cdn.rawgit.com/rharel/js-music-note-utils/master/coverage/badge.svg)
 
 # Musical Note Utilities
 
