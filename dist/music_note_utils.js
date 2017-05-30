@@ -404,7 +404,7 @@
 		}
 	};
 
-	window.MusicNoteUtilities = {
+	var MusicNoteUtilities = {
 		PitchClass: PitchClass,
 		Accidental: Accidental,
 
@@ -418,4 +418,10 @@
 			A4_frequency = +value;
 		}
 	};
+	if (typeof window !== "undefined") {
+		window.MusicNoteUtilities = MusicNoteUtilities;
+	}
+	if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
+		module.exports = MusicNoteUtilities;
+	}
 })();

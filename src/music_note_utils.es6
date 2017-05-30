@@ -406,7 +406,7 @@ const NoteIndex =
 	}
 };
 
-window.MusicNoteUtilities =
+const MusicNoteUtilities =
 {
 	PitchClass: PitchClass,
 	Accidental: Accidental,
@@ -417,4 +417,12 @@ window.MusicNoteUtilities =
 	get A4_frequency() { return A4_frequency; },
 	set A4_frequency(value) { A4_frequency = +value; }
 };
+if (typeof window !== "undefined")
+{
+	window.MusicNoteUtilities = MusicNoteUtilities;
+}
+if (typeof module !== "undefined" && typeof module.exports !== "undefined")
+{
+	module.exports = MusicNoteUtilities;
+}
 })();
