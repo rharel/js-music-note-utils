@@ -9,12 +9,17 @@
     "midi",
     "utility"
   ],
-  "author": "Raoul Harel",
-  "license": "MIT",
   "homepage": "https://github.com/rharel/js-music-note-utils",
   "bugs": {
     "url": "https://github.com/rharel/js-music-note-utils/issues"
   },
+  "license": "MIT",
+  "author": "Raoul Harel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rharel/js-music-note-utils.git"
+  },
+  "main": "dist/music_note_utils.js",
   "scripts": {
     "test": "mocha",
     "coverage": "node_modules/.bin/istanbul-cobertura-badger -r coverage/cobertura-coverage.xml -b badge"
