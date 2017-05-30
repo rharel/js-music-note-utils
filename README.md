@@ -11,7 +11,7 @@ Either `require('@rharel/music-note-utils')` or include in the browser with `<sc
 ## Usage
 
 ```javascript
-var MusicNoteUtilities = require('@rharel/music_note_utils');
+var MusicNoteUtilities = require('@rharel/music-note-utils');
 ```
 or if in-browser:
 ```javascript
