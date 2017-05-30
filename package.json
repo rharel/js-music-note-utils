@@ -1,0 +1,23 @@
+{
+  "name": "@rharel/music-note-utils",
+  "version": "1.0.0",
+  "description": "Compact utility library for modeling and manipulating individual musical notes.",
+  "keywords": [
+    "music",
+    "note",
+    "utility"
+  ],
+  "author": "Raoul Harel",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "chai": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2"
+  }
+}
