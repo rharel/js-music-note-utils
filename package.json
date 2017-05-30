@@ -9,12 +9,16 @@
   ],
   "author": "Raoul Harel",
   "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.5.1",
     "chai": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-mocha": "^4.3.1",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0",
     "istanbul": "^0.4.5",
