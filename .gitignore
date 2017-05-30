@@ -3,3 +3,8 @@
 
 # NPM
 node_modules/
+
+# Coverage
+coverage/**/*
+!coverage/badge.svg
+!coverage/cobertura-coverage.xml

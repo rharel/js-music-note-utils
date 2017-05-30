@@ -1,5 +1,6 @@
 const gulp = require("gulp");
 const babel = require("gulp-babel");
+const istanbul = require("gulp-istanbul");
 const mocha = require("gulp-mocha");
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
@@ -10,12 +11,22 @@ gulp.task("compile", function()
 		.pipe(babel())
 		.pipe(gulp.dest("dist"));
 });
-gulp.task("test", function()
+gulp.task("pre-test", ["compile"], function()
 {
-	return gulp.src("test/*.test.js", { read: false })
-		.pipe(mocha());
+	return gulp.src(["dist/music_note_utils.js"])
+		.pipe(istanbul())
+		.pipe(istanbul.hookRequire());
 });
-gulp.task("build", ["compile", "test"], function()
+gulp.task("test", ["pre-test"], function()
+{
+	return gulp.src(["test/*.test.js"])
+		.pipe(mocha())
+		.pipe(istanbul.writeReports
+		({
+			reporters: [ 'lcov', 'json', 'text', 'text-summary', 'cobertura']
+		}));
+});
+gulp.task("build", ["test"], function()
 {
 	return gulp.src("dist/music_note_utils.js")
 		.pipe(uglify())
