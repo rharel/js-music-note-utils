@@ -1,0 +1,8 @@
+# IntelliJ
+.idea/
+
+# Coverage
+coverage/
+
+# Travis
+.travis.yml
