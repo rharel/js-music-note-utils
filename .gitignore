@@ -1,0 +1,5 @@
+# IntelliJ
+.idea/
+
+# NPM
+node_modules/
